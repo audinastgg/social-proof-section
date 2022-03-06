@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background: url(images/bg-pattern-top-desktop.svg) no-repeat left 0 top 0, 
+    url(images/bg-pattern-bottom-desktop.svg) no-repeat right 0 top 100px;
+}
+
+.container {
+    margin: 50px 50px;
+    padding: 30px 50px;
+    transform: scale(0.8);
+}
+p {
+    line-height: 1.5;
+}
+.first-section{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 20px;
+    word-spacing: 5px;
+}
+
+.reviews,.report,.besttech {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.reviews {
+    margin-right: 100px;
+    margin-left: 0;
+}
+.report {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.besttech{
+    margin-left: 110px;
+}
+.left-side {
+    width: 400px;
+}
+.right-side  span {
+    padding-left: 20px;
+}
+
+.second-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-right: 20px;
+    font-size: 12px;
+    margin: 10px auto;
+    
+}
+
+.box1,.box2,.box3 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 30px 30px;
+    color: hsl(300, 24%, 96%);
+    height: fit-content;
+    width: 270px;
+}
+
+.box1 {
+    margin-top: 10;
+}
+.box2{
+    margin-top: 20px;
+}
+.box3 {
+    margin-top: 30px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-bottom: 10px; 
+    width: 50px; 
+}
+h2 {
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight: 700;
+    word-spacing: 5px;
+}
+.name {
+    display: inline-block;
+    width: 150px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.second-section span {
+    font-size: 13px;
+    color: hsl(333, 80%, 67%);
+}
+
+
