@@ -12,19 +12,24 @@ body {
 }
 
 .container {
-    margin: 50px 50px;
+    margin: 50px auto;
     padding: 30px 50px;
-    transform: scale(0.8);
 }
+
+.first-section{
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+}
+
+.left-side {
+    width: 400px;
+}
+
 p {
     line-height: 1.5;
 }
-.first-section{
-    font-size: 13px;
-    display: flex;
-    justify-content: space-between;
-}
-
 
 h1 {
     color: hsl(300, 43%, 22%);
@@ -34,57 +39,65 @@ h1 {
     word-spacing: 5px;
 }
 
+.right-side {
+    margin-left: 10px;
+}
+
 .reviews,.report,.besttech {
     background-color: hsl(300, 24%, 96%);
     border-radius: 8px;
-    padding: 10px 20px;
+    padding: 15px 10px;
     margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+}
+.images {
+    display: inline;
 }
 .reviews {
-    margin-right: 100px;
-    margin-left: 0;
+    right: 100px;
 }
+
 .report {
-    margin-right: 50px;
-    margin-left: 50px;
+    right: 50px;
 }
-.besttech{
-    margin-left: 110px;
+
+.right-side {
+    display: grid;
+    align-self: flex-start;
 }
-.left-side {
-    width: 400px;
-}
+
 .right-side  span {
     padding-left: 20px;
 }
 
 .second-section {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 50px;
-    padding-right: 20px;
+    gap: 30px;
     font-size: 12px;
-    margin: 10px auto;
-    
 }
 
 .box1,.box2,.box3 {
     background-color: hsl(300, 43%, 22%);
     border-radius: 10px;
-    padding: 30px 30px;
+    padding: 30px 45px;
     color: hsl(300, 24%, 96%);
     height: fit-content;
-    width: 270px;
 }
 
 .box1 {
-    margin-top: 10;
+    margin-top: 10px;
 }
+
 .box2{
-    margin-top: 20px;
+    margin-top: 25px;
 }
+
 .box3 {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .icon {
@@ -92,25 +105,73 @@ h1 {
     vertical-align: middle;
     border-radius: 50%;
     margin-bottom: 10px; 
-    width: 50px; 
+    width: 40px; 
 }
-h2 {
-    display: inline-block;
-    font-size: 13px;
-    vertical-align: middle;
-    font-weight: 700;
-    word-spacing: 5px;
-}
+
+
 .name {
     display: inline-block;
-    width: 150px;
     vertical-align: middle;
-    padding-left: 10px;
+    font-size: 8px;
+    padding-left: 5px;
+}
+h2 {
+    padding-bottom: 5px;
 }
 
 .second-section span {
-    font-size: 13px;
+    font-size: 11px;
     color: hsl(333, 80%, 67%);
 }
 
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
 
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+    .container {
+        display: grid;
+        margin: 25px 25px;
+    }
+    
+    .left-side {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .first-section,.second-section {
+      grid-template-columns: 1fr;
+    }
+    .reviews,.report,.besttech {
+        position: static;
+        text-align: center;
+    }
+    .box1,.box2,.box3 {
+        margin-top: 0;
+    }
+    .images {
+        display: block;
+        padding-bottom: 10px;
+    }
+    
+  }
+
+  @media only screen and (max-device-width: 480px) {
+      body {
+          font-size: 12px;
+          background-image: url(images/bg-pattern-top-mobile.svg), 
+          url(images/bg-pattern-bottom-mobile.svg);
+          background-repeat: no-repeat, no-repeat;
+          background-size: auto, 800px;
+          background-position: top left, top 600px right -300px;
+           
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+      }
+      
+  }
